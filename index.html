@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manevi Danışmanlık | Online Manevi Danışmanlık ve Rehberlik</title>
+  <meta name="description" content="Manevi danışmanlık, online manevi danışmanlık, manevi rehberlik ve seans randevu hizmetleri. WhatsApp üzerinden hızlı bilgi alın, ilk görüşme için iletişime geçin." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Manevi Danışmanlık" />
+  <meta name="theme-color" content="#f5ede2" />
+  <meta name="keywords" content="manevi danışmanlık, online manevi danışmanlık, manevi rehberlik, manevi destek, ruhsal denge, iç huzur, kaygı, vesvese, iç huzursuzluk, whatsapp randevu" />
+  <link rel="canonical" href="https://www.ornekalanadi.com/" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="apple-touch-icon" href="assets/logo.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:site_name" content="Manevi Danışmanlık" />
+  <meta property="og:title" content="Manevi Danışmanlık | Online Manevi Danışmanlık ve Rehberlik" />
+  <meta property="og:description" content="Kaygı, vesvese ve iç huzursuzluk yaşayanlar için manevi danışmanlık ve rehberlik. WhatsApp ile hızlı randevu ve bilgi alma imkânı." />
+  <meta property="og:url" content="https://www.ornekalanadi.com/" />
+  <meta property="og:image" content="assets/hero-kapak.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Manevi Danışmanlık" />
+  <meta name="twitter:description" content="Online manevi danışmanlık ve rehberlik için hızlı iletişim ve randevu." />
+  <meta name="twitter:image" content="assets/hero-kapak.jpg" />
+
+  <style>
+    :root {
+      --bg: #f7f1e8;
+      --bg-soft: #fcf8f2;
+      --card: rgba(255,255,255,.72);
+      --card-strong: rgba(255,255,255,.88);
+      --line: rgba(101, 79, 52, .14);
+      --text: #2c2722;
+      --muted: #70675e;
+      --primary: #8b6b3d;
+      --primary-dark: #6f532d;
+      --secondary: #24493e;
+      --secondary-soft: #e9f1ee;
+      --accent: #d5b27c;
+      --shadow: 0 20px 60px rgba(71, 52, 33, .12);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --container: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(213,178,124,.22), transparent 34%),
+        radial-gradient(circle at top right, rgba(36,73,62,.12), transparent 26%),
+        linear-gradient(180deg, #fbf7f0 0%, #f7f1e8 42%, #f4ede3 100%);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+
+    .container {
+      width: min(calc(100% - 32px), var(--container));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 90px 0;
+      position: relative;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(139, 107, 61, .10);
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: .92rem;
+      letter-spacing: .02em;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      box-shadow: 0 0 0 5px rgba(139, 107, 61, .09);
+    }
+
+    .section-title {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 3vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -.03em;
+    }
+
+    .section-desc {
+      margin: 0;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      backdrop-filter: blur(14px);
+      background: rgba(252, 248, 242, .82);
+      border-bottom: 1px solid rgba(101,79,52,.08);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 82px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .brand-text {
+      min-width: 0;
+    }
+
+    .brand-title {
+      display: block;
+      margin: 0;
+      font-size: 1.08rem;
+      line-height: 1.1;
+      font-weight: 800;
+      color: #3e352d;
+    }
+
+    .brand p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .brand-logo,
+    .footer-logo {
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: #fff;
+      border: 1px solid rgba(101,79,52,.10);
+      box-shadow: 0 10px 24px rgba(71, 52, 33, .10);
+    }
+
+    .brand-logo {
+      width: 64px;
+      height: 64px;
+      border-radius: 20px;
+      padding: 8px;
+    }
+
+    .footer-logo {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      padding: 7px;
+    }
+
+    .brand-logo img,
+    .footer-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      image-rendering: -webkit-optimize-contrast;
+    }
+
+    .desktop-only {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: nowrap;
+    }
+
+    .nav-links a {
+      color: #473c31;
+      font-weight: 600;
+      font-size: .95rem;
+      padding: 10px 0;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover { color: var(--primary); }
+
+    .nav-cta,
+    .nav-cta:link,
+    .nav-cta:visited,
+    .nav-cta:hover,
+    .nav-cta:active {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-width: 190px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #355c50, #24493e);
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff;
+      text-decoration: none;
+      font-weight: 800;
+      border: 1px solid rgba(255,255,255,.18);
+      box-shadow: 0 14px 32px rgba(36,73,62,.18);
+    }
+
+    .nav-cta:hover {
+      background: linear-gradient(135deg, #40695c, #2b5548);
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff;
+    }
+
+    .nav-panel {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 48px;
+      height: 48px;
+      border: 0;
+      border-radius: 14px;
+      background: rgba(139,107,61,.10);
+      color: var(--primary-dark);
+      cursor: pointer;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .hero {
+      padding: 52px 0 26px;
+      overflow: hidden;
+    }
+
+    .hero-wrap {
+      display: grid;
+      grid-template-columns: 1.06fr .94fr;
+      align-items: center;
+      gap: 34px;
+      min-height: calc(100vh - 140px);
+    }
+
+    .hero-copy {
+      padding: 24px 0;
+    }
+
+    .hero-copy h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.6rem, 5vw, 5rem);
+      line-height: .98;
+      letter-spacing: -.05em;
+    }
+
+    .hero-copy h1 span {
+      color: var(--primary);
+    }
+
+    .hero-copy p {
+      margin: 0 0 24px;
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 640px;
+    }
+
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin: 26px 0 30px;
+    }
+
+    .hero-points div {
+      padding: 15px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.55);
+      border: 1px solid rgba(101,79,52,.08);
+      font-weight: 600;
+      color: #43392f;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+      text-align: center;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #355c50, #24493e);
+      color: #fff;
+      box-shadow: 0 18px 40px rgba(36,73,62,.18);
+    }
+
+    .btn-outline {
+      border-color: rgba(36,73,62,.18);
+      background: rgba(255,255,255,.72);
+      color: #24493e;
+    }
+
+    .btn-outline:hover {
+      background: #eef4f1;
+    }
+
+    .hero-card {
+      position: relative;
+      padding: 18px;
+      border-radius: 34px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.50), rgba(255,255,255,.82)),
+        radial-gradient(circle at top, rgba(213,178,124,.34), transparent 34%);
+      border: 1px solid rgba(255,255,255,.6);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: 22px;
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,.35);
+      pointer-events: none;
+    }
+
+    .hero-media {
+      overflow: hidden;
+      border-radius: 26px;
+      position: relative;
+      min-height: 620px;
+      background: #d5c0a0;
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .highlight-bar {
+      margin-top: 28px;
+      padding: 16px 18px;
+      border-radius: 22px;
+      background: rgba(255,255,255,.62);
+      border: 1px solid rgba(101,79,52,.10);
+      color: #4d4339;
+      font-weight: 600;
+    }
+
+    .quick-grid,
+    .services-grid,
+    .content-grid,
+    .faq-grid,
+    .contact-grid,
+    .footer-grid {
+      display: grid;
+      gap: 24px;
+    }
+
+    .quick-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: 34px;
+    }
+
+    .quick-card {
+      padding: 26px;
+      border-radius: var(--radius-lg);
+      background: rgba(255,255,255,.88);
+      border: 1px solid rgba(101,79,52,.08);
+      box-shadow: var(--shadow);
+    }
+
+    .quick-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .quick-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .96rem;
+    }
+
+    .services-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 34px;
+    }
+
+    .service-card {
+      padding: 28px;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.70));
+      border: 1px solid rgba(101,79,52,.08);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      top: -32px;
+      right: -32px;
+      width: 120px;
+      height: 120px;
+      background: radial-gradient(circle, rgba(213,178,124,.28), transparent 70%);
+    }
+
+    .service-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      font-size: 1.4rem;
+      background: rgba(139,107,61,.12);
+      color: var(--primary-dark);
+      margin-bottom: 18px;
+    }
+
+    .service-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.24rem;
+    }
+
+    .service-card p {
+      margin: 0 0 16px;
+      color: var(--muted);
+    }
+
+    .service-card ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #4f473f;
+    }
+
+    .service-card li + li { margin-top: 8px; }
+
+    .content-grid {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 34px;
+    }
+
+    .content-card {
+      padding: 32px;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(180deg, rgba(255,255,255,.86), rgba(255,255,255,.72));
+      border: 1px solid rgba(101,79,52,.08);
+      box-shadow: var(--shadow);
+    }
+
+    .content-card.full { grid-column: 1 / -1; }
+
+    .content-card h3 {
+      margin: 0 0 16px;
+      font-size: 1.35rem;
+      line-height: 1.2;
+    }
+
+    .content-card p {
+      margin: 0 0 16px;
+      color: #4b433a;
+    }
+
+    .bullet-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .bullet-item {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(139,107,61,.08);
+      color: #4b433a;
+      border: 1px solid rgba(101,79,52,.08);
+    }
+
+    .books-showcase {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 34px;
+      align-items: center;
+      margin-top: 34px;
+    }
+
+    .books-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .books-visual img {
+      width: min(100%, 760px);
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 18px 34px rgba(58, 44, 29, .14));
+    }
+
+    .books-copy {
+      text-align: left;
+    }
+
+    .books-copy h3 {
+      margin: 0 0 14px;
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      line-height: 1.15;
+    }
+
+    .books-copy p {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .book-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: .96fr 1.04fr;
+      gap: 28px;
+      align-items: stretch;
+      margin-top: 34px;
+    }
+
+    .panel {
+      padding: 30px;
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(101,79,52,.08);
+      box-shadow: var(--shadow);
+      background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.75));
+    }
+
+    .mini-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .mini-item {
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(36,73,62,.08);
+      color: #345146;
+      font-weight: 600;
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    label {
+      font-weight: 700;
+      font-size: .95rem;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .field {
+      width: 100%;
+      padding: 15px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(101,79,52,.12);
+      background: rgba(255,255,255,.88);
+      color: var(--text);
+      outline: none;
+    }
+
+    .field:focus {
+      border-color: rgba(139,107,61,.48);
+      box-shadow: 0 0 0 4px rgba(139,107,61,.10);
+    }
+
+    .helper {
+      color: var(--muted);
+      font-size: .92rem;
+      margin-top: 2px;
+    }
+
+    .form-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .notice {
+      padding: 15px 16px;
+      border-radius: 18px;
+      background: rgba(139,107,61,.08);
+      color: #54483b;
+      border: 1px solid rgba(101,79,52,.08);
+      font-size: .95rem;
+    }
+
+    .faq-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 34px;
+    }
+
+    details {
+      padding: 22px 24px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.74));
+      border: 1px solid rgba(101,79,52,.08);
+      box-shadow: var(--shadow);
+    }
+
+    details summary {
+      cursor: pointer;
+      list-style: none;
+      font-weight: 800;
+      font-size: 1.05rem;
+      position: relative;
+      padding-right: 34px;
+    }
+
+    details summary::-webkit-details-marker { display: none; }
+
+    details summary::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      top: -2px;
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+
+    details[open] summary::after { content: "−"; }
+
+    details p {
+      margin: 14px 0 0;
+      color: var(--muted);
+    }
+
+    .contact-grid {
+      grid-template-columns: .94fr 1.06fr;
+      margin-top: 34px;
+    }
+
+    .contact-card {
+      padding: 30px;
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(36,73,62,.98), rgba(28,56,47,.95));
+      color: #f5f0e7;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-card p { color: rgba(245,240,231,.82); }
+
+    .contact-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .contact-item {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+
+    .contact-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: white;
+    }
+
+    .contact-box {
+      padding: 30px;
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.76));
+      border: 1px solid rgba(101,79,52,.08);
+      box-shadow: var(--shadow);
+    }
+
+    footer {
+      padding: 34px 0 44px;
+      border-top: 1px solid rgba(101,79,52,.08);
+      background: rgba(255,255,255,.38);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-left .brand {
+      align-items: center;
+    }
+
+    .footer-brand-title {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    .footer-note {
+      margin: 0;
+      color: var(--muted);
+      font-size: .95rem;
+      line-height: 1.6;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 22px;
+      font-weight: 700;
+    }
+
+    .footer-links a {
+      color: #4b433a;
+      transition: color .2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    .floating-socials {
+      position: fixed;
+      right: 20px;
+      bottom: 24px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-end;
+    }
+
+    .floating-socials a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-width: 182px;
+      padding: 14px 18px;
+      border-radius: 999px;
+      color: #fff !important;
+      text-decoration: none;
+      font-weight: 800;
+      line-height: 1;
+      box-shadow: 0 18px 38px rgba(0,0,0,.18);
+      transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease;
+    }
+
+    .floating-socials a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 22px 42px rgba(0,0,0,.22);
+    }
+
+    .floating-socials svg {
+      width: 22px;
+      height: 22px;
+      display: block;
+      flex-shrink: 0;
+      fill: currentColor;
+    }
+
+    .floating-instagram {
+      background: linear-gradient(135deg, #f58529 0%, #dd2a7b 35%, #8134af 68%, #515bd4 100%);
+    }
+
+    .floating-whatsapp {
+      background: linear-gradient(135deg, #25d366, #128c7e);
+    }
+
+    .muted-bg {
+      background: linear-gradient(180deg, rgba(255,255,255,.28), rgba(255,255,255,.04));
+    }
+
+    @media (max-width: 1080px) {
+      .hero-wrap,
+      .split,
+      .contact-grid,
+      .content-grid,
+      .footer-grid,
+      .quick-grid,
+      .services-grid,
+      .faq-grid,
+      .books-showcase {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-media { min-height: 620px; }
+      .books-copy { text-align: center; }
+      .book-actions { justify-content: center; }
+    }
+
+    @media (max-width: 860px) {
+      .nav {
+        min-height: 72px;
+        position: relative;
+      }
+
+      .menu-toggle {
+        display: inline-grid;
+        place-items: center;
+      }
+
+      .nav-panel {
+        position: absolute;
+        top: calc(100% + 12px);
+        right: 0;
+        left: 0;
+        padding: 16px;
+        border-radius: 22px;
+        background: rgba(255,255,255,.97);
+        border: 1px solid rgba(101,79,52,.08);
+        box-shadow: var(--shadow);
+      }
+
+      .nav-panel.open { display: block; }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+      }
+
+      .nav-links a,
+      .nav-cta {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .desktop-only { display: none; }
+
+      .hero-copy h1 { font-size: clamp(2.3rem, 11vw, 4.2rem); }
+      .hero-points,
+      .form-grid { grid-template-columns: 1fr; }
+
+      .section { padding: 78px 0; }
+
+      .book-actions,
+      .form-actions {
+        flex-direction: column;
+      }
+
+      .book-actions .btn,
+      .form-actions .btn {
+        width: 100%;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .footer-left {
+        align-items: center;
+      }
+
+      .footer-links {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      footer {
+        padding-bottom: 120px;
+      }
+
+      .brand-logo {
+        width: 56px;
+        height: 56px;
+        border-radius: 18px;
+        padding: 7px;
+      }
+
+      .footer-logo {
+        width: 52px;
+        height: 52px;
+        border-radius: 16px;
+        padding: 6px;
+      }
+
+      .floating-socials {
+        right: 14px;
+        bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+        gap: 10px;
+      }
+
+      .floating-socials a {
+        width: 58px;
+        height: 58px;
+        min-width: 58px;
+        padding: 0;
+        border-radius: 50%;
+      }
+
+      .floating-socials .label {
+        display: none;
+      }
+
+      .floating-socials svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero { padding-top: 30px; }
+      .hero-media { min-height: 510px; }
+      .hero-card { padding: 12px; border-radius: 24px; }
+      .hero-media { border-radius: 18px; }
+
+      .content-card,
+      .panel,
+      .contact-card,
+      .contact-box,
+      .service-card,
+      .quick-card,
+      details {
+        padding: 22px;
+      }
+
+      .brand {
+        gap: 10px;
+      }
+
+      .brand-title {
+        font-size: 1rem;
+      }
+
+      .brand p {
+        font-size: .82rem;
+      }
+
+      .footer-grid {
+        gap: 22px;
+      }
+
+      .footer-left {
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-left .brand {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .footer-note {
+        max-width: 280px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px 18px;
+        justify-items: center;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+      }
+
+      .footer-links a:last-child {
+        grid-column: 1 / -1;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Manevi Danışmanlık",
+    "description": "Online manevi danışmanlık, manevi rehberlik ve WhatsApp üzerinden randevu hizmetleri sunan danışmanlık sayfası.",
+    "areaServed": "TR",
+    "telephone": "+90 552 413 09 07",
+    "sameAs": [
+      "https://www.instagram.com/erdemli_yolculuk/",
+      "https://wa.me/905524130907"
+    ],
+    "url": "https://www.ornekalanadi.com/"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Manevi danışmanlık hangi konularda destek sunar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kaygı, iç huzursuzluk, anlam arayışı, manevi denge, sabır, tevekkül, içsel toparlanma ve ruhsal destek ihtiyaçlarında rehberlik sunulabilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Seanslar online yapılabiliyor mu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. Uygunluk durumuna göre online görüşme planlanabilir ve ön bilgi WhatsApp üzerinden alınabilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Nasıl randevu alabilirim?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sayfadaki bilgi alma formunu doldurabilir ya da doğrudan WhatsApp bağlantısı üzerinden hazır mesajla iletişime geçebilirsiniz."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#anasayfa" aria-label="Manevi Danışmanlık anasayfa">
+        <div class="brand-logo">
+          <img src="assets/logo.png" alt="Manevi Danışmanlık logosu" width="64" height="64" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Manevi Danışmanlık</span>
+          <p>Online Manevi Danışmanlık ve Rehberlik</p>
+        </div>
+      </a>
+
+      <nav class="desktop-only nav-links" aria-label="Ana menü">
+        <a href="#anasayfa">Anasayfa</a>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#yaklasim">Yaklaşım</a>
+        <a href="#kitaplar">Kitaplar</a>
+        <a href="#bilgi-al">Bilgi Al</a>
+        <a href="#iletisim">İletişim</a>
+        <a class="nav-cta" href="https://wa.me/905524130907?text=Merhaba%20manevi%20dan%C4%B1%C5%9Fmanl%C4%B1k%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç">☰</button>
+
+      <div class="nav-panel" id="navPanel">
+        <nav class="nav-links" aria-label="Mobil menü">
+          <a href="#anasayfa">Anasayfa</a>
+          <a href="#hizmetler">Hizmetler</a>
+          <a href="#yaklasim">Yaklaşım</a>
+          <a href="#kitaplar">Kitaplar</a>
+          <a href="#bilgi-al">Bilgi Al</a>
+          <a href="#iletisim">İletişim</a>
+          <a class="nav-cta" href="https://wa.me/905524130907?text=Merhaba%20manevi%20dan%C4%B1%C5%9Fmanl%C4%B1k%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="anasayfa">
+      <div class="container hero-wrap">
+        <div class="hero-copy">
+          <span class="eyebrow">Manevi denge, iç huzur ve rehberlik</span>
+
+          <h1>Kaygı, vesvese ve <span>iç huzursuzluk</span> mu yaşıyorsunuz?</h1>
+
+          <p>
+            Manevi danışmanlık ile ruhunuzu yeniden dengelemek, içinizdeki yükü hafifletmek
+            ve daha huzurlu bir iç dünyaya yönelmek için destek alabilirsiniz.
+          </p>
+
+          <div class="hero-points">
+            <div>✓ Online ön görüşme ve bilgi alma</div>
+            <div>✓ WhatsApp üzerinden hızlı iletişim</div>
+            <div>✓ Manevi rehberlik ve içsel denge</div>
+            <div>✓ Yazar kimliği ve kitaplarla güven veren yapı</div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#bilgi-al">İlk Seans İçin Bilgi Al</a>
+            <a class="btn btn-outline" href="https://www.instagram.com/erdemli_yolculuk/" target="_blank" rel="noopener">Instagram'a Git</a>
+          </div>
+
+          <div class="highlight-bar">
+            “...kalpler ancak Allah’ı zikretmekle huzur bulur.” <strong>(Ra’d 13:28)</strong>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-media">
+            <img src="assets/hero-kapak.jpg" alt="Manevi danışmanlık kapak görseli" fetchpriority="high" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-bg">
+      <div class="container">
+        <span class="eyebrow">Bu sayfada sizi ne bekliyor?</span>
+        <h2 class="section-title">Güven veren, sade ve profesyonel bir danışmanlık akışı</h2>
+        <p class="section-desc">
+          Bu sayfa; bilgi, güven ve hızlı iletişimi tek bir akışta sunacak şekilde hazırlandı.
+        </p>
+
+        <div class="quick-grid">
+          <article class="quick-card">
+            <h3>Tek sayfa yüksek dönüşüm</h3>
+            <p>Ziyaretçiyi dağıtmadan bilgi, güven ve iletişim adımına taşıyan kompakt yapı.</p>
+          </article>
+          <article class="quick-card">
+            <h3>SEO odaklı başlıklar</h3>
+            <p>Manevi danışmanlık, online manevi danışmanlık, manevi rehberlik ve manevi destek arama niyetine göre hazırlandı.</p>
+          </article>
+          <article class="quick-card">
+            <h3>WhatsApp randevu akışı</h3>
+            <p>Hazır mesajlı form sayesinde kullanıcı doğrudan bilgi alma ve randevu talebine gider.</p>
+          </article>
+          <article class="quick-card">
+            <h3>Yazar kimliğini öne çıkarır</h3>
+            <p>Kitapları güçlü bir görsel dil içinde sunarak danışmanlık markasını güçlendirir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hizmetler">
+      <div class="container">
+        <span class="eyebrow">Hizmet alanları</span>
+        <h2 class="section-title">İç huzuru güçlendiren destek başlıkları</h2>
+        <p class="section-desc">
+          Manevi danışmanlık sürecinde en çok ihtiyaç duyulan temel destek alanları burada özetlenmiştir.
+        </p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">☾</div>
+            <h3>Manevi Danışmanlık</h3>
+            <p>İç dünyasını toparlamak, anlam duygusunu güçlendirmek ve ruhsal denge arayanlar için rehberlik alanı.</p>
+            <ul>
+              <li>Anlam arayışı ve içsel denge</li>
+              <li>Kaygı ve iç huzursuzlukla baş etme</li>
+              <li>Sabır, şükür ve tevekkül bilinci</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">✧</div>
+            <h3>Online Manevi Danışmanlık</h3>
+            <p>Bulunduğunuz yerden güvenli ve planlı bir görüşme akışıyla bilgi alma ve seans sürecine başlama imkânı.</p>
+            <ul>
+              <li>Uzak şehirlerden erişim kolaylığı</li>
+              <li>WhatsApp ile ön bilgi ve randevu</li>
+              <li>Esnek ve hızlı iletişim</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">❋</div>
+            <h3>Manevi Rehberlik</h3>
+            <p>Kalbin yönünü yeniden tayin etmeye, yükü tek başına taşımadığını fark etmeye ve toparlanma sürecini güçlendirmeye odaklanır.</p>
+            <ul>
+              <li>İçsel güven duygusunu artırma</li>
+              <li>Ruhsal dayanıklılığı besleme</li>
+              <li>Manevi farkındalık kazanma</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-bg" id="yaklasim">
+      <div class="container">
+        <span class="eyebrow">Yaklaşım ve içerik</span>
+        <h2 class="section-title">Maneviyatı merkeze alan bütüncül yaklaşım</h2>
+        <p class="section-desc">
+          Ruhsal sıkıntıları yalnızca belirti düzeyinde değil, anlam ve yön arayışı bağlamında ele alan bir içerik akışı sunulur.
+        </p>
+
+        <div class="content-grid">
+          <article class="content-card full">
+            <h3>Manevi danışman ve rehberin kişiye katkısı</h3>
+            <div class="bullet-list">
+              <div class="bullet-item">📌 Kişinin yaşadığı ruhsal sıkıntıyı sadece bir “bozukluk” olarak değil, anlam arayışının bir işareti olarak ele alır.</div>
+              <div class="bullet-item">📌 İnsanın kendisiyle ve Allah’la olan bağını güçlendirerek içsel güven duygusunu artırır.</div>
+              <div class="bullet-item">📌 Tevekkül, sabır ve şükür bilinci kazandırarak kaygı ve çaresizlik hissini azaltır.</div>
+              <div class="bullet-item">📌 Suçluluk, değersizlik ve yalnızlık duygularının manevi kökenlerini fark ettirir.</div>
+              <div class="bullet-item">📌 Kişinin yükü tek başına taşımadığını idrak etmesini sağlayarak ruhsal dayanıklılığı artırır.</div>
+              <div class="bullet-item">📌 Anlam duygusunu güçlendirdiği için psikolojik kırılmaların derinleşmesini önleyici bir rol üstlenir.</div>
+            </div>
+            <p>
+              Bu yönüyle manevi danışmanlık, modern psikolojiyi dışlamadan; insanın ruhunu merkeze alarak iyileşme sürecini bütüncül hâle getirir.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3>Modern psikoloji ile manevi yaklaşımın birlikte ele alınması</h3>
+            <p>
+              Modern psikolojinin tanımladığı birçok ruhsal problem, insanın önce kendisiyle sonra da Rabbiyle olan bağını kaybetmesiyle derinleşir.
+              Oysa maneviyatla tanışmak; insanın iç dünyasını fark etmesi, sınırlarını kabul etmesi ve yükünü tek başına taşımadığını idrak etmesi demektir.
+            </p>
+            <p>
+              Manevi danışmanlık ve rehberlik, sadece bir teselli değil; kalbin yönünü yeniden tayin etme sürecidir. Kişi maneviyatla tanıştıkça anlam duygusu güçlenir,
+              anlam güçlendikçe ruhsal dağılmalar azalır. Çünkü insan, ancak ruhunu tanıdığında zihnini de sağaltabilir; kalbiyle temas kurduğunda psikolojik kırılganlıklarıyla baş edebilir.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <h3>Kadim bilginin bugünkü dili</h3>
+            <p>
+              Bugün “modern psikoloji” adıyla ele alınan pek çok kavramın, aslında dinî literatürde asırlar öncesinden karşılığı vardır.
+              İnsan ruhunun korku, üzüntü, boşluk ve bunalım hâlleri; İslam düşüncesinde kalbin zayıflaması, itminanın kaybı ve tevekkül eksikliği gibi kavramlarla çok önceden tanımlanmıştır.
+            </p>
+            <p>
+              Modern psikolojinin bugün teşhis ettiği ruhsal kırılmalar, dinin asırlardır terbiye etmeye çalıştığı insan hâlleridir.
+              Bu yüzden psikoloji yeni bir hakikat keşfetmiş değil; kadim manevi bilgiyi farklı bir dille yeniden ifade etmektedir.
+              Maneviyat güçlendikçe insanın ruhu dengelenir, dengelenen ruh da zihni korur.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kitaplar">
+      <div class="container">
+        <span class="eyebrow">Yazar kimliği</span>
+        <h2 class="section-title">İç huzura giden yolda size rehber olacak kitapları keşfedin</h2>
+        <p class="section-desc">
+          Mehtap Erdem’in kalbe dokunan eserleri; dua, rahmet, huzur ve manevi denge arayışında olan okuyucular için ilham verici bir rehber niteliğindedir.
+        </p>
+
+        <div class="books-showcase">
+          <div class="books-visual">
+            <img src="assets/im.png" alt="Mehtap Erdem kitapları" loading="lazy" />
+          </div>
+
+          <div class="books-copy">
+            <h3>Kalbinize iyi gelecek, hayatınıza yön verecek eserlerle tanışın</h3>
+            <p>
+              “Her Duanın Bir Hikâyesi Var” ve “Rahmetin Sırları”, manevi derinlik arayan okuyucular için hazırlanmış, iç huzuru ve anlam duygusunu güçlendiren kıymetli eserlerdir.
+            </p>
+
+            <div class="book-actions">
+              <a class="btn btn-primary" href="#bilgi-al">Kitaplar Hakkında Bilgi Al</a>
+              <a class="btn btn-outline" target="_blank" rel="noopener" href="https://wa.me/905524130907?text=Merhaba%2C%20kitaplar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.">WhatsApp Sor</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-bg" id="bilgi-al">
+      <div class="container">
+        <span class="eyebrow">Bilgi alma ve randevu</span>
+        <h2 class="section-title">Hazır mesajlı seans randevu formu</h2>
+        <p class="section-desc">
+          Formu doldurduğunuzda bilgileriniz hazır mesaj yapısıyla WhatsApp üzerinden hızlıca iletilir.
+        </p>
+
+        <div class="split">
+          <div class="panel">
+            <h3 style="margin-top:0; font-size:1.6rem;">Neden bu form daha iyi çalışır?</h3>
+            <p style="color:var(--muted);">
+              Ziyaretçiyi yormadan bilgi alma sürecini hızlandırır ve ilk teması kolaylaştırır.
+            </p>
+            <div class="mini-list">
+              <div class="mini-item">Hızlı dönüşüm odaklı yapı</div>
+              <div class="mini-item">WhatsApp için otomatik hazır mesaj</div>
+              <div class="mini-item">Seans konusu seçimi ile ön eleme</div>
+              <div class="mini-item">Mobilde rahat kullanılacak sade tasarım</div>
+            </div>
+            <div class="notice" style="margin-top:20px;">
+              Görüşme süreci, uygunluk durumu ve merak ettiğiniz detaylar için formu doldurmanız yeterlidir. Bilgileriniz doğrultusunda size en kısa sürede dönüş sağlanır.
+            </div>
+          </div>
+
+          <div class="panel">
+            <form id="randevuForm">
+              <div class="form-grid">
+                <div>
+                  <label for="adSoyad">Ad Soyad</label>
+                  <input class="field" id="adSoyad" name="adSoyad" type="text" placeholder="Adınızı yazın" required />
+                </div>
+                <div>
+                  <label for="telefon">Telefon</label>
+                  <input class="field" id="telefon" name="telefon" type="tel" placeholder="05xx xxx xx xx" required />
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div>
+                  <label for="konu">Görüşme Konusu</label>
+                  <select class="field" id="konu" name="konu" required>
+                    <option value="">Seçiniz</option>
+                    <option>Manevi danışmanlık hakkında bilgi</option>
+                    <option>Online seans randevusu</option>
+                    <option>Kaygı ve iç huzursuzluk desteği</option>
+                    <option>Kitaplar hakkında bilgi</option>
+                    <option>Genel bilgi alma</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="zaman">Uygun Gün / Saat</label>
+                  <input class="field" id="zaman" name="zaman" type="text" placeholder="Örn: Hafta içi 19:00 sonrası" />
+                </div>
+              </div>
+
+              <div>
+                <label for="mesaj">Kısa Not</label>
+                <textarea class="field" id="mesaj" name="mesaj" rows="5" placeholder="Kısaca yaşadığınız durumu veya bilgi almak istediğiniz konuyu yazabilirsiniz."></textarea>
+                <div class="helper">Bu metin WhatsApp mesajına otomatik eklenecek.</div>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">WhatsApp ile Bilgi Al</button>
+                <a class="btn btn-outline" href="https://www.instagram.com/erdemli_yolculuk/" target="_blank" rel="noopener">Instagram'dan DM Gönder</a>
+              </div>
+
+              <div class="notice">
+                Hazır mesaj örneği: “Merhaba, sitedeki form üzerinden size ulaşıyorum. Manevi danışmanlık hakkında bilgi almak istiyorum...”
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sss">
+      <div class="container">
+        <span class="eyebrow">Sık sorulan sorular</span>
+        <h2 class="section-title">Ziyaretçinin aklındaki soruları önceden cevapla</h2>
+        <p class="section-desc">
+          En çok sorulan konulara kısa ve net yanıtlarla ilk güven duygusu desteklenir.
+        </p>
+
+        <div class="faq-grid">
+          <details open>
+            <summary>Manevi danışmanlık hangi konularda destek sunar?</summary>
+            <p>Kaygı, vesvese, iç huzursuzluk, anlam arayışı, manevi denge, içsel toparlanma ve ruhsal destek ihtiyacı gibi konularda rehberlik amaçlı bilgi ve yönlendirme sunulabilir.</p>
+          </details>
+
+          <details>
+            <summary>Seanslar online yapılabiliyor mu?</summary>
+            <p>Evet. Uygunluk durumuna göre online görüşme planlanabilir. Ön bilgi ve ilk iletişim WhatsApp üzerinden hızlıca sağlanabilir.</p>
+          </details>
+
+          <details>
+            <summary>Nasıl randevu alabilirim?</summary>
+            <p>Sayfadaki bilgi alma formunu doldurup WhatsApp’a yönlenebilir ya da doğrudan 0552 413 09 07 numarası üzerinden iletişim kurabilirsiniz.</p>
+          </details>
+
+          <details>
+            <summary>Kitaplar hakkında nasıl bilgi alabilirim?</summary>
+            <p>Kitaplar bölümündeki “WhatsApp Sor” butonuyla doğrudan bilgi alabilirsiniz.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-bg" id="iletisim">
+      <div class="container">
+        <span class="eyebrow">İletişim</span>
+        <h2 class="section-title">Hızlı ulaşım alanı</h2>
+        <p class="section-desc">
+          Manevi danışmanlık, online görüşme, seans bilgisi ve kitaplar hakkında hızlı şekilde iletişime geçebilirsiniz.
+        </p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3 style="margin-top:0; font-size:1.7rem;">Bana ulaşın</h3>
+            <p>Manevi danışmanlık, online görüşme, seans bilgisi ve kitaplar hakkında detaylı bilgi almak için aşağıdaki kanalları kullanabilirsiniz.</p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <strong>Telefon</strong>
+                <a href="tel:+905524130907">0552 413 09 07</a>
+              </div>
+              <div class="contact-item">
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/905524130907?text=Merhaba%20manevi%20dan%C4%B1%C5%9Fmanl%C4%B1k%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener">Mesaj göndermek için tıklayın</a>
+              </div>
+              <div class="contact-item">
+                <strong>Instagram</strong>
+                <a href="https://www.instagram.com/erdemli_yolculuk/" target="_blank" rel="noopener">@erdemli_yolculuk</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <h3 style="margin-top:0; font-size:1.5rem;">Hazır kısa mesajlar</h3>
+            <p style="color:var(--muted); margin-bottom:20px;">Bunlar doğrudan dönüşüm için yerleştirildi. Kullanıcı tek dokunuşla size yazabilir.</p>
+
+            <div class="mini-list">
+              <a class="mini-item" target="_blank" rel="noopener" href="https://wa.me/905524130907?text=Merhaba%2C%20manevi%20dan%C4%B1%C5%9Fmanl%C4%B1k%20hizmetiniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.">Manevi danışmanlık hakkında bilgi almak istiyorum.</a>
+              <a class="mini-item" target="_blank" rel="noopener" href="https://wa.me/905524130907?text=Merhaba%2C%20online%20seans%20i%C3%A7in%20uygunluk%20durumunu%20%C3%B6%C4%9Frenmek%20istiyorum.">Online seans için uygunluk durumunu öğrenmek istiyorum.</a>
+              <a class="mini-item" target="_blank" rel="noopener" href="https://wa.me/905524130907?text=Merhaba%2C%20kitaplar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.">Kitaplar hakkında bilgi almak istiyorum.</a>
+              <a class="mini-item" target="_blank" rel="noopener" href="https://wa.me/905524130907?text=Merhaba%2C%20ilk%20g%C3%B6r%C3%BC%C5%9Fme%20ve%20randevu%20s%C3%BCreci%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.">İlk görüşme ve randevu süreci hakkında bilgi almak istiyorum.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-left">
+        <div class="brand">
+          <div class="footer-logo">
+            <img src="assets/logo.png" alt="Manevi Danışmanlık logosu" width="58" height="58" />
+          </div>
+          <div>
+            <div class="footer-brand-title">Manevi Danışmanlık</div>
+            <p style="margin:4px 0 0;">Online Manevi Danışmanlık ve Rehberlik</p>
+          </div>
+        </div>
+
+        <p class="footer-note">
+          © 2026 Manevi Danışmanlık. Tüm hakları saklıdır.
+        </p>
+      </div>
+
+      <nav class="footer-links" aria-label="Alt menü">
+        <a href="#anasayfa">Anasayfa</a>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#yaklasim">Yaklaşım</a>
+        <a href="#kitaplar">Kitaplar</a>
+        <a href="#bilgi-al">Bilgi Al</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="floating-socials">
+    <a class="floating-instagram" href="https://www.instagram.com/erdemli_yolculuk/" target="_blank" rel="noopener" aria-label="Instagram sayfasına git">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm8.95 1.35a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 6.85A5.15 5.15 0 1 1 6.85 12 5.16 5.16 0 0 1 12 6.85Zm0 1.8A3.35 3.35 0 1 0 15.35 12 3.35 3.35 0 0 0 12 8.65Z"/>
+      </svg>
+      <span class="label">Instagram</span>
+    </a>
+
+    <a class="floating-whatsapp" href="https://wa.me/905524130907?text=Merhaba%20manevi%20dan%C4%B1%C5%9Fmanl%C4%B1k%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp ile iletişime geç">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M19.11 17.21c-.27-.14-1.58-.78-1.82-.87-.24-.09-.42-.14-.6.14-.18.27-.69.87-.85 1.05-.15.18-.31.21-.58.07-.27-.14-1.13-.42-2.15-1.34-.8-.71-1.34-1.58-1.49-1.85-.15-.27-.02-.41.11-.55.12-.12.27-.31.4-.47.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.14-.6-1.45-.82-1.99-.22-.52-.44-.45-.6-.46h-.51c-.18 0-.47.07-.71.34-.24.27-.93.91-.93 2.23s.96 2.6 1.09 2.78c.13.18 1.88 2.87 4.56 4.03.64.28 1.14.45 1.53.57.64.2 1.22.17 1.68.1.51-.08 1.58-.65 1.8-1.27.22-.62.22-1.16.15-1.27-.07-.1-.24-.17-.51-.31Z"/>
+        <path d="M16.01 3.2c-7.08 0-12.81 5.72-12.81 12.77 0 2.26.59 4.46 1.72 6.39L3 29l6.82-1.78a12.87 12.87 0 0 0 6.18 1.58h.01c7.07 0 12.79-5.72 12.79-12.77 0-3.42-1.33-6.63-3.76-9.04A12.74 12.74 0 0 0 16.01 3.2Zm0 23.47h-.01a10.7 10.7 0 0 1-5.45-1.49l-.39-.23-4.05 1.06 1.08-3.95-.25-.4a10.58 10.58 0 0 1-1.64-5.67c0-5.86 4.78-10.63 10.67-10.63 2.85 0 5.52 1.1 7.53 3.1a10.55 10.55 0 0 1 3.13 7.53c0 5.86-4.79 10.63-10.62 10.63Z"/>
+      </svg>
+      <span class="label">WhatsApp</span>
+    </a>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navPanel = document.getElementById('navPanel');
+
+    if (menuToggle && navPanel) {
+      menuToggle.addEventListener('click', () => {
+        navPanel.classList.toggle('open');
+      });
+
+      navPanel.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => navPanel.classList.remove('open'));
+      });
+    }
+
+    const form = document.getElementById('randevuForm');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const adSoyad = document.getElementById('adSoyad').value.trim();
+        const telefon = document.getElementById('telefon').value.trim();
+        const konu = document.getElementById('konu').value.trim();
+        const zaman = document.getElementById('zaman').value.trim();
+        const mesaj = document.getElementById('mesaj').value.trim();
+
+        const metin = [
+          'Merhaba, sitedeki form üzerinden size ulaşıyorum.',
+          '',
+          'Ad Soyad: ' + adSoyad,
+          'Telefon: ' + telefon,
+          'Konu: ' + konu,
+          'Uygun Gün / Saat: ' + (zaman || 'Belirtmedi'),
+          'Kısa Not: ' + (mesaj || 'Belirtmedi'),
+          '',
+          'Manevi danışmanlık hakkında bilgi almak istiyorum.'
+        ].join('\n');
+
+        const url = 'https://wa.me/905524130907?text=' + encodeURIComponent(metin);
+        window.open(url, '_blank', 'noopener');
+      });
+    }
+  </script>
+</body>
+</html>
